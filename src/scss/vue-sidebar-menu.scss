@@ -1,0 +1,36 @@
+@import './var.scss';
+.v-sidebar-menu {
+  & , * {
+    background-color: #124c29;
+    color: #fff;
+  }
+  & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
+  }
+  & .vsm-link {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: $itemPadding;
+    line-height: $itemlineHeight;
+    text-decoration: none;
+    transition: 0.3s all;
+  }
+  & .vsm-icon {
+    float: left;
+    line-height: $itemlineHeight;
+    margin-right: 10px;
+  }
+  & .vsm-header {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+  }
+}
+@import './themes/default-theme.scss';

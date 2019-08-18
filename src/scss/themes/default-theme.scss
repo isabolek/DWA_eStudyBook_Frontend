@@ -1,0 +1,13 @@
+$primaryColor: #fff;
+$iconActiveColor: #fff;
+
+.v-sidebar-menu {
+    & .vsm-item.first-item {
+        &.active-item > .vsm-link, &.parent-active-item > .vsm-link { // ono bijelo sa strane
+            box-shadow: 5px 0px 5px 1px $primaryColor inset;
+            & > .vsm-icon {
+                color: $iconActiveColor;
+            }
+        }
+    }
+}
